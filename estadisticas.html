@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DataTables Ejemplo - Evilnapsis</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css">
+  <script type="text/javascript" src="datatables/datatables.min.js" ></script>
+
+  <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./">DataTables</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="./">INICIO</a></li>
+        <!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        -->
+      </ul>
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+
+<div class="row">
+<div class="col-md-12">
+
+<h1>Estadísticas</h1>
+
+<table class="table table-bordered datatable">
+  <thead>
+    <table id="example" class="display" style="width: 100%;">
+      <thead>
+          <tr>
+  
+              <th>numero de orden </th>
+              <th>codigo de producto</th>
+              <th>producto solicitado</th>
+              <th>precio unitario </th>
+              <th>cantidad de productos</th>
+              <th>valor total </th> 
+           
+          </tr>
+  
+  </thead>
+  
+  <tbody>
+          <tr>
+  
+              <td>0000</td>
+              <td>bs1</td>
+              <td>bandeja de sushi</td>
+              <td>$350</td>
+              <td>20</td>
+              <td>$7000</td>
+           
+          </tr>
+  
+  
+          <tr>
+              <td>0001</td>
+              <td>pc1</td>
+              <td>palitos chinos</td>
+              <td>$100</td>
+              <td>30</td>
+              <td>$3000</td>
+           
+              
+          </tr>
+  
+          <tr>
+              <td>0002</td>
+              <td>cl1</td>
+              <td>caja con logo</td>
+              <td>$250</td>
+              <td>40</td>
+              <td>$10000</td>
+              
+          </tr>
+          <tr>
+              <td>0003</td>
+              <td>bpk</td>
+              <td>bolsa papel kraft</td>
+              <td>$160</td>
+              <td>90</td>
+              <td>$14400</td>
+            
+          </tr>
+          <tr>
+              <td>0004</td>
+              <td>cd1</td>
+              <td>cubiertos desechables</td>
+              <td>$320</td>
+              <td>70</td>
+              <td>$22400</td>
+              
+          </tr>
+          <tr>
+              <td>0005</td>
+              <td>cpf1</td>
+              <td>conos papas fritas</td>
+              <td>$80</td>
+              <td>30</td>
+              <td>$2400</td>
+             
+  
+          </tr>
+          <tr>
+              <td>0006</td>
+              <td>cfc1</td>
+              <td>caja fideos chinos</td>
+              <td>$330</td>
+              <td>40</td>
+              <td>$13200</td>
+             
+          </tr>
+          <tr>
+              <td>0007</td>
+              <td>tc1</td>
+              <td>tarro de carton</td>
+              <td>$600</td>
+              <td>60</td>
+              <td>$36000</td>
+              
+          </tr>
+          <tr>
+              <td>0008</td>
+              <td>s1</td>
+              <td>servilletas</td>
+              <td>$60</td>
+              <td>50</td>
+              <td>$3000</td>
+              
+          </tr>
+          <tr>
+              <td>0009</td>
+              <td>pc2</td>
+              <td>plato carton</td>
+              <td>$90</td>
+              <td>60</td>
+              <td>$5400</td>
+          
+          </tr>
+          <tr>
+              <td>0010</td>
+              <td>ea1</td>
+              <td>envase aluminio c1</td>
+              <td>$520</td>
+              <td>70</td>
+              <td>$36400</td>
+          
+          </tr>
+      </tbody>
+</table>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".datatable").DataTable();
+  })
+</script>
+</div>
+
+</div>
+
+</div>
+
+ <!-- JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+ crossorigin="anonymous"></script>
+<script src="js\funciones.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+</body>
+</html>

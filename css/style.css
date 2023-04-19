@@ -1,0 +1,61 @@
+section{
+    float: left;
+    width: 100%;
+}
+aside{
+    float: left;
+    width: 100%;
+}
+h1{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+h2{
+    color: hsl(177, 55%, 46%);
+    text-align: center;
+}
+textarea, input{
+    width: 100%;
+}
+
+/* Vista de computador */
+@media (min-width: 1024px){
+    section{
+        float: left;
+        width: 50%;
+    }
+    aside{
+        float: left;
+        width: 50%;
+    }
+    h1{
+        color: #32d1d5;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+/* Vista de tablet */
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    section{
+        float: left;
+        width: 70%;
+    }
+    aside{
+        float: left;
+        width: 30%;
+    }
+    h1{
+        color: blue;
+        text-align: center;
+        font-size: 40px;
+    }
+}
